@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import matplotlib.pyplot as plt
+import sys
+import pandas as pd
+from pdb import set_trace
+
+
+def main():
+    df = pd.read_csv(sys.argv[1])
+    plt.plot(df[sys.argv[2]])
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()

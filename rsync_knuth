@@ -1,0 +1,6 @@
+#!/usr/bin/expect -f
+
+spawn rsync -va . jgardi@knuth.cs.hmc.edu:courses/cs131/jgardi/hw8
+expect "Password:"
+send -- "Spider-man-1\r\r"
+interact
