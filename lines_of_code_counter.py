@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# This file was copied from https://github.com/rrwick/LinesOfCodeCounter
+
 # This Python script counts the lines of code in the directory in which it is
 # run.  It only looks at files which end in the file extensions passed to the
 # script as arguments.
