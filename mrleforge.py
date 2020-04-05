@@ -10,7 +10,6 @@ launch_command = """""".replace('\n', ' ')
 def main():
     emr = boto3.client('emr')
     cluster_id = launch_new_cluster()
-    # cluster_id = 'j-3SBHQIX36PH4J'
     public_dns = wait_for_and_retrieve_public_dns(emr, cluster_id)
     print(f'public dns is {public_dns}')
     ssh_url = f'hadoop@{public_dns}'
